@@ -6,7 +6,7 @@ let context = canvas.getContext("2d");
 context.fillStyle = "white";
 context..fillRect(0, 0, canvas.width, canvas.height);
 
-let draw_color = "black";
+let draw_color = "white";
 let draw_width = "2";
 let is_drwaing = false;
 
