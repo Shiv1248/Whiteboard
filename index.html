@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whiteboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="box">
             <canvas id="canvas"></canvas>
             <div class="tools">
-                <button type="button" class="button">Undo</button>
-                <button type="button" class="button">Clear</button>
+                <button type="button" class="button"><i class="fa fa-undo"></i></button>
+                <button type="button" class="button">X</button>
 
                 <div class="palette" style="background: red;"></div>
                 <div class="palette" style="background: blue;"></div>
@@ -24,4 +25,5 @@
             </div>
         </div>
     </body>
+    <script src="script.js"></script>
 </html>
