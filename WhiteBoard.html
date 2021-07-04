@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Board</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(27, 26, 26, 0.301);
+    font-family: 'Bad Script', cursive;
+}
+h1{
+    color: #111;
+    position: absolute;
+}
+h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7){
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(8){
+    animation-delay: 1.75s;
+}
+h1 span:nth-child(9){
+    animation-delay: 2s;
+}
+h1 span:nth-child(10){
+    animation-delay: 2.25s;
+}
+h1 span:nth-child(11){
+    animation-delay: 2.5s;
+}
+h1 span:nth-child(12){
+    animation-delay: 2.75s;
+}
+h1 span:nth-child(13){
+    animation-delay: 3s;
+}
+h1 span:nth-child(14){
+    animation-delay: 3.25s;
+}
+    @keyframes animate{
+    0%,100%{
+        color: #fff;
+        filter: blur(1px);
+        text-shadow: 0 0 5px #2275e2,
+                    0 0 7px #2275e2,
+                    0 0 9px #2275e2,
+                    0 0 11px #2275e2,
+                    0 0 13px #2275e2,
+                    0 0 15px #2275e2,
+                    0 0 17px #2275e2,
+                    0 0 19px #2275e2;
+    }
+    5%,95%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none,
+    }
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="banner">
+            <h1 style="text-decoration: underline;margin-top: -300px;font-size: 70px;margin-left: -150px;">
+              <span>W</span>
+              <span>h</span>
+              <span>i</span>
+              <span>t</span>
+              <span>e</span>
+              <span>-</span>
+              <span>B</span>
+              <span>o</span>
+              <span>a</span>
+              <span>r</span>
+              <span>d</span>
+              <br>
+              <span style="position: absolute;margin-left: -250px;"><a href="index.html"> 
+                                            <span>O</span>
+                                            <span>p</span>
+                                            <span>e</span>
+                                            <span>n</span></a></span>
+              <br>
+              <span style="position: absolute;margin-left: 400px;margin-top: -120px;"><a href="credits.html"> 
+                                        <span>C</span>
+                                        <span>r</span>
+                                        <span>e</span>
+                                        <span>d</span>
+                                        <span>i</span>
+                                        <span>t</span>
+                                        <span>s</span></a></span>
+    
+            </h1>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
