@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="box">
+        
+        <div class="tools">
+            <h1 style="font-family:'Comic Sans MS'">E-whiteboard</h1>             
+            <button onclick="undo_last()" type="button" class="button"><i class="fa fa-undo"></i></button>
+            <button onclick="clear_canvas()" type="button" class="button">Clear</button>
+            <div onclick="change_color(this)" class="palette" style="background: red;"></div>
+            <div onclick="change_color(this)" class="palette" style="background: blue;"></div>
+            <div onclick="change_color(this)" class="palette" style="background: yellow;"></div>
+            <div onclick="change_color(this)" class="palette" style="background: green;"></div>
+
+            <input oninput="draw_color=this.value" type="color" class="picker">
+            <input oninput="draw_width=this.value" type="range" min="1" max="30" class="range">
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
