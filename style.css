@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    padding: 30px;
+    font-family: Georgia;
+    overflow: hidden;
+    background: #313131;
+    
+  }
+ 
+  .tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    border: 2px red;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  
+  canvas {
+    margin-top: 10px;
+    box-shadow: -3px 2px 9px 6px black;
+    cursor: pointer;
+    border: 5px groove rgb(8, 238, 58);
+    border-radius: 10px;
+  }
+  
+  .tools .palette{
+    height: 30px;
+    width: 30px;
+    min-height:30px;
+    min-width: 30px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+  
+  .tools .button{
+    align-self: center;
+    width: 50px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background: #222;
+    font-weight: bold;
+    margin: 0 15px;
+    text-align: center;
+  }
+  
+  .picker{
+    align-self: center;
+    margin: 0 15px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid gold
+  }
+  
+  .pen-range{
+    align-self: center;
+    margin: 0 10px;
+  }
+  .tools .container input {
+    visibility: hidden;
+  }
+  .tools .container label {
+    width:30px;
+    height:30px;
+    display:inline-block;
+    text-align:center;
+    line-height:30px;
+    margin:0px 2px;
+    cursor:pointer;
+  }
+  .tools .container input:checked + label {
+    background:#111;
+    color:#eee;
+    border-radius:50%;
+  }
